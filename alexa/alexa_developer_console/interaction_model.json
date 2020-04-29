@@ -1,0 +1,128 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my plant",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ask my plant what it can do for me",
+            "what can my plant do",
+            "ask my plant what it can do",
+            "ask my plant to tell me what it can do",
+            "ask my plant for help",
+            "help",
+            "what can my plant pot do",
+            "what features I have access to",
+            "how can I control my device",
+            "how can I water my plant",
+            "how do I water my plant",
+            "what commands are available",
+            "what it can do",
+            "do"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "pump",
+          "slots": [
+            {
+              "name": "status",
+              "type": "STATUS"
+            }
+          ],
+          "samples": [
+            "ask my plant to {status} auto watering",
+            "ask my plant to turn {status} auto watering",
+            "ask my plant to {status} automatic watering",
+            "ask my plant to turn auto watering {status} ",
+            "turn automatic watering {status}",
+            "turn {status} automatic watering",
+            "{status} automatic watering"
+          ]
+        },
+        {
+          "name": "water_plant",
+          "slots": [],
+          "samples": [
+            "water my plant",
+            "start watering",
+            "start the watering script",
+            "water itself"
+          ]
+        },
+        {
+          "name": "last_watered",
+          "slots": [],
+          "samples": [
+            "when was my plant last watered",
+            "last watered",
+            "last watering time",
+            "when my plant was last watered",
+            "when it was last watered"
+          ]
+        },
+        {
+          "name": "online",
+          "slots": [],
+          "samples": [
+            "ask my plant if it's connected to the internet",
+            "ask my plant whever it's connected to the internet",
+            "ask my plant whever it's connected",
+            "ask my plant whever it's online",
+            "ask my plant if it's online",
+            "if it's connected to the internet",
+            "whever it's connected to the internet",
+            "whever it's connected",
+            "whever it's online",
+            "if it's online",
+            "is my plant online",
+            "is it online"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "STATUS",
+          "values": [
+            {
+              "name": {
+                "value": "off",
+                "synonyms": [
+                  "Off",
+                  "low",
+                  "disable"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "on",
+                "synonyms": [
+                  "High",
+                  "On",
+                  "enable"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
